@@ -3,14 +3,14 @@
 namespace BrianFaust\Taggable\Traits;
 
 use BrianFaust\Taggable\Exceptions\InvalidTagException;
-use BrianFaust\Taggable\Models\Tag;
+use BrianFaust\Taggable\Tag;
 use BrianFaust\Taggable\Util;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Support\Collection;
 use Illuminate\Support\Facades\DB;
 use Stringy\StaticStringy as S;
 
-trait Taggable
+trait HasTagsTrait
 {
     public function tags()
     {

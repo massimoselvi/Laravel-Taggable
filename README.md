@@ -53,13 +53,13 @@ This will create a `config/taggable.php` file in your app that you can modify to
 
 namespace App;
 
-use BrianFaust\Taggable\Contracts\Taggable;
-use BrianFaust\Taggable\Traits\Taggable as TaggableTrait;
+use BrianFaust\Taggable\HasTagsTrait;
+use BrianFaust\Taggable\Interfaces\HasTags;
 use Illuminate\Database\Eloquent\Model;
 
-class Post extends Model implements Taggable
+class Post extends Model implements HasTags
 {
-    use TaggableTrait;
+    use HasTagsTrait;
 
     protected $onlyUseExistingTags = false;
 }

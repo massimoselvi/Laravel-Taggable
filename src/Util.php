@@ -2,7 +2,7 @@
 
 namespace BrianFaust\Taggable;
 
-use BrianFaust\Taggable\Contracts\Taggable;
+use BrianFaust\Taggable\Interfaces\Taggable;
 
 class Util
 {

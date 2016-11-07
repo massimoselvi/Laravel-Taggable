@@ -2,7 +2,9 @@
 
 namespace BrianFaust\Taggable;
 
-class ServiceProvider extends \BrianFaust\ServiceProvider\ServiceProvider
+use BrianFaust\ServiceProvider\ServiceProvider;
+
+class TaggableServiceProvider extends ServiceProvider
 {
     public function boot()
     {

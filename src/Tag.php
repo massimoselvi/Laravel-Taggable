@@ -1,6 +1,6 @@
 <?php
 
-namespace BrianFaust\Taggable\Models;
+namespace BrianFaust\Taggable;
 
 use Illuminate\Database\Eloquent\Model as Eloquent;
 use Stringy\StaticStringy as S;

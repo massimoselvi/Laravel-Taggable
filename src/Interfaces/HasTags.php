@@ -1,10 +1,10 @@
 <?php
 
-namespace BrianFaust\Taggable\Contracts;
+namespace BrianFaust\Taggable\Interfaces;
 
 use Illuminate\Database\Eloquent\Builder;
 
-interface Taggable
+interface HasTags
 {
     public function tags();
 
