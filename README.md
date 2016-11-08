@@ -12,9 +12,7 @@ And then include the service provider within `app/config/app.php`.
 
 ``` php
 'providers' => [
-    // ... Illuminate Providers
-    // ... App Providers
-    BrianFaust\Taggable\ServiceProvider::class
+    BrianFaust\Taggable\TaggableServiceProvider::class
 ];
 ```
 
@@ -23,7 +21,7 @@ And then include the service provider within `app/config/app.php`.
 To get started, you'll need to publish all vendor assets:
 
 ```bash
-$ php artisan vendor:publish --provider="BrianFaust\Taggable\ServiceProvider"
+$ php artisan vendor:publish --provider="BrianFaust\Taggable\TaggableServiceProvider"
 ```
 
 And then run the migrations to setup the database table.
