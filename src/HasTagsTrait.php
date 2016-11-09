@@ -1,6 +1,6 @@
 <?php
 
-namespace BrianFaust\Taggable\Traits;
+namespace BrianFaust\Taggable;
 
 use BrianFaust\Taggable\Exceptions\InvalidTagException;
 use BrianFaust\Taggable\Tag;
