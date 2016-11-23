@@ -1,10 +1,17 @@
 <?php
 
+/*
+ * This file is part of Laravel Taggable.
+ *
+ * (c) Brian Faust <hello@brianfaust.de>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
 namespace BrianFaust\Taggable;
 
 use BrianFaust\Taggable\Exceptions\InvalidTagException;
-use BrianFaust\Taggable\Tag;
-use BrianFaust\Taggable\Util;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Support\Collection;
 use Illuminate\Support\Facades\DB;
@@ -63,11 +70,11 @@ trait HasTagsTrait
             $tag = Tag::findOrCreate($string);
         }
 
-        if (!$this->tags instanceof Collection) {
+        if (! $this->tags instanceof Collection) {
             $this->tags = new Collection($this->tags);
         }
 
-        if (!$this->tags->contains($tag->getKey())) {
+        if (! $this->tags->contains($tag->getKey())) {
             $this->tags()->attach($tag);
         }
     }

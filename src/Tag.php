@@ -1,5 +1,14 @@
 <?php
 
+/*
+ * This file is part of Laravel Taggable.
+ *
+ * (c) Brian Faust <hello@brianfaust.de>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
 namespace BrianFaust\Taggable;
 
 use Illuminate\Database\Eloquent\Model as Eloquent;
@@ -23,7 +32,7 @@ class Tag extends Eloquent
 
     public static function findOrCreate($name)
     {
-        if (!$tag = static::findByName($name)) {
+        if (! $tag = static::findByName($name)) {
             $tag = static::create(compact('name'));
         }
 
