@@ -70,11 +70,11 @@ trait HasTagsTrait
             $tag = Tag::findOrCreate($string);
         }
 
-        if (! $this->tags instanceof Collection) {
+        if (!$this->tags instanceof Collection) {
             $this->tags = new Collection($this->tags);
         }
 
-        if (! $this->tags->contains($tag->getKey())) {
+        if (!$this->tags->contains($tag->getKey())) {
             $this->tags()->attach($tag);
         }
     }

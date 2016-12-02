@@ -32,7 +32,7 @@ class Tag extends Eloquent
 
     public static function findOrCreate($name)
     {
-        if (! $tag = static::findByName($name)) {
+        if (!$tag = static::findByName($name)) {
             $tag = static::create(compact('name'));
         }
 
