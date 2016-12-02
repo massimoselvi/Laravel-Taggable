@@ -11,9 +11,7 @@ $ composer require faustbrian/laravel-taggable
 And then include the service provider within `app/config/app.php`.
 
 ``` php
-'providers' => [
-    BrianFaust\Taggable\TaggableServiceProvider::class
-];
+BrianFaust\Taggable\TaggableServiceProvider::class
 ```
 
 ### Migration
