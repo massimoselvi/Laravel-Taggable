@@ -22,9 +22,9 @@ declare(strict_types=1);
 
 namespace BrianFaust\Taggable;
 
-use BrianFaust\ServiceProvider\ServiceProvider;
+use BrianFaust\ServiceProvider\AbstractServiceProvider;
 
-class TaggableServiceProvider extends ServiceProvider
+class TaggableServiceProvider extends AbstractServiceProvider
 {
     public function boot(): void
     {
