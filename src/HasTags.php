@@ -28,7 +28,7 @@ use Illuminate\Support\Collection;
 use Illuminate\Support\Facades\DB;
 use Stringy\StaticStringy as S;
 
-trait HasTagsTrait
+trait HasTags
 {
     public function tags()
     {
